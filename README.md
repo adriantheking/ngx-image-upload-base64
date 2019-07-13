@@ -1,27 +1,58 @@
+[![npm version](https://img.shields.io/npm/v/ngx-image-upload-base64.svg)](https://www.npmjs.com/package/ngx-image-upload-base64)
+[![licence](https://img.shields.io/npm/l/ngx-image-upload-base64.svg)](https://www.npmjs.com/package/ngx-image-upload-base64)
+
 # NgxImageUploadBase64
+Angular module for upload images to base64
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+# Requirements
+Module need Bootstrap 4
 
-## Development server
+# Installation
+```npm install ngx-image-upload-base64 --save```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Demo
+[Demo](https://adriantheking.github.io/ngx-image-upload-base64/) or [Plnkr](https://embed.plnkr.co/bzo7eOV6RtfRwPljG1k6/)
 
-## Code scaffolding
+# NgxImageUploadBase64 Options
+All parameters are passing by Module Input
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `maxWidth` | Type: `string` | Default: `400` - Max image width in pixels
+- `maxHeight` | Type: `string` | Default: `400` - Max image height in pixels
+- `availableExtensions` | Type: `string` | Default: `image/png|image/jpeg` - Available extensions to upload
+- `loadImages` | Type:  `array of Image` | Default: `undefined` - List of images to load with component for preview
 
-## Build
+# NgxImageUploadBase64 Options Example
+``` 
+<ngx-image-upload-base64 
+[maxWidth]="500" 
+[maxHeight]="500" 
+[availableExtensions]="image/png|image/jpeg"
+[loadImages]="imagesToLoad">
+</ngx-image-upload-base64>
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# NgxImageUploadBase64 Methods
+- `onAddImage($event)` | Parameter type: `array of Image` - List of already added images
+- `onDeleteImage($event)` | Parameter type: `array of Image` - List of all images after deleted
 
-## Running unit tests
+# NgxImageUploadBase64 Methods Example
+```
+<ngx-image-upload-base64 
+(onAddImage)="onAddImage($event)" 
+(onDeleteImage)="onDelete($event)">
+</ngx-image-upload-base64>
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# NgxImageUploadBase64 Full Example
+```
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ngx-image-upload-base64 (onAddImage)="onAddImage($event)" (onDeleteImage)="onDelete($event)"
+      [loadImages]="imagesToLoad"></ngx-image-upload-base64>
+    </div>
+  </div>
+</div>
+```
+# Credits
+https://adrianszen.com
