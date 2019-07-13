@@ -11,7 +11,8 @@ Module need Bootstrap 4
 ```npm install ngx-image-upload-base64 --save```
 
 # Demo
-[Demo](https://lukasz-galka.github.io/ngx-gallery-demo/) or [Plnkr](https://embed.plnkr.co/bzo7eOV6RtfRwPljG1k6/)
+[Demo](https://adriantheking.github.io/ngx-image-upload-base64/) or [Plnkr](https://embed.plnkr.co/bzo7eOV6RtfRwPljG1k6/)
+
 # NgxImageUploadBase64 Options
 All parameters are passing by Module Input
 
