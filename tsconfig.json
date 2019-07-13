@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-image-upload-base64": [
+        "dist/ngx-image-upload-base64"
+      ],
+      "ngx-image-upload-base64/*": [
+        "dist/ngx-image-upload-base64/*"
+      ]
+    }
   }
 }

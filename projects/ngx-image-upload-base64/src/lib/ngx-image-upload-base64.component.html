@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="custom-file">
+            <input type='file' (change)="onSelectFile($event)" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div *ngFor="let image of imagesPreview" class="image-preview mt-2 col-md-4 px-1 " #dynamicImages>
+            <img src="{{image.base64}}" class="img-fluid img" />
+            <a class="delete" (click)="deleteImg(image)"></a>
+        </div>
+    </div>
+</div>

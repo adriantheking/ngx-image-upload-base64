@@ -1,0 +1,42 @@
+{
+  "name": "ngx-image-upload-base64",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrian Szeń",
+    "email": "kiddyphp@gmail.com",
+    "url": "https://adrianszen.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/adriantheking/ngx-image-upload-base64"
+  },
+  "homepage": "https://github.com/adriantheking/ngx-image-upload-base64",
+  "keywords": [
+    "angular",
+    "upload",
+    "image",
+    "images",
+    "base64",
+    "typescript",
+    "bootstrap",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/adriantheking/ngx-image-upload-base64/issues"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "contributors": [
+    {
+      "name": "Adrian Szeń",
+      "url": "https://adrianszen.com"
+    }
+  ],
+  "description": "Angular module for upload images to base64",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  }
+}
