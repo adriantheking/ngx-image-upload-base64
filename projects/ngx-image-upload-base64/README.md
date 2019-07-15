@@ -1,5 +1,5 @@
-[![npm version](https://img.shields.io/npm/v/ngx-image-upload-base64.svg)](https://www.npmjs.com/package/ngx-image-upload-base64)
-[![licence](https://img.shields.io/npm/l/ngx-image-upload-base64.svg)](https://www.npmjs.com/package/ngx-image-upload-base64)
+[![npm version](https://img.shields.io/npm/v/ngx-image-upload-base.svg)](https://www.npmjs.com/package/ngx-image-upload-base)
+[![licence](https://img.shields.io/npm/l/ngx-image-upload-base.svg)](https://www.npmjs.com/package/ngx-image-upload-base)
 
 # NgxImageUploadBase64
 Angular module for upload images to base64
@@ -8,10 +8,30 @@ Angular module for upload images to base64
 Module need Bootstrap 4
 
 # Installation
-```npm install ngx-image-upload-base64 --save```
+```npm install ngx-image-upload-base --save```
 
-# Demo
-[Demo](https://adriantheking.github.io/ngx-image-upload-base64/) or [Plnkr](https://embed.plnkr.co/bzo7eOV6RtfRwPljG1k6/)
+NgModule
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { NgxImageUploadBase64Module } from 'ngx-image-upload-base';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgxImageUploadBase64Module
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
 # NgxImageUploadBase64 Options
 All parameters are passing by Module Input

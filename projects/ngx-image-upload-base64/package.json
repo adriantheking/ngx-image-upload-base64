@@ -1,6 +1,6 @@
 {
-  "name": "ngx-image-upload-base64",
-  "version": "1.0.0",
+  "name": "ngx-image-upload-base",
+  "version": "1.0.1",
   "author": {
     "name": "Adrian Szeń",
     "email": "kiddyphp@gmail.com",

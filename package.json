@@ -1,6 +1,6 @@
 {
   "name": "ngx-image-upload-base64",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Adrian Szeń",
   "scripts": {
     "ng": "ng",
